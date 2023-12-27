@@ -1,0 +1,22 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus Impact</title>
+</head>
+<body>
+    <Header></Header>
+    <slot></slot>
+    <Footer></Footer>
+    <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
+<script
+type="text/javascript"
+src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+</html>
