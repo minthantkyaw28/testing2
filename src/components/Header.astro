@@ -5,6 +5,22 @@ From Tailwind website -->
     .dropdown:hover .dropdown-menu {
       display: block;
     }
+    .WIDER{
+      width: 800px;
+      height: 500px;
+    }
+
+    @media screen and (max-width: 640px) {
+      .dropdown-menu {
+        width: 100%; /* Set the width to 100% for mobile screens */
+        box-shadow: none; /* Optional: Remove box shadow for mobile screens */
+      }
+
+      .WIDER{
+      width: auto;
+      height:auto;
+    }
+    }
   </style>
 <nav class="bg-gray-800">
     <div class="lg:mx-6 sm:mx-2 max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -40,7 +56,21 @@ From Tailwind website -->
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="#" class=" text-gray-200 hover:text-gray-300     px-2 py-2 text-xs font-sm" aria-current="page">Home</a>
-              <a href="#" class="text-gray-200 hover:text-gray-300  px-2 py-2  text-xs font-sm">Services</a>
+              <!-- <a href="#" class="text-gray-200 hover:text-gray-300  px-2 py-2  text-xs font-sm">Services</a> -->
+              <div class="relative inline-block dropdown">
+                <button tabindex="0" class="text-gray-200 hover:text-gray-300   px-2 py-2  text-xs  font-sm">
+                  Services
+                </button>
+                <div class="absolute hidden dropdown-menu bg-white border rounded-md mt-0 py-2 WIDER">
+                  <div>
+                    <div></div>
+                    <div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <a href="#" class="text-gray-200 hover:text-gray-300  px-2 py-2  text-xs font-sm">Pricing</a>
               <a href="#" class="text-gray-200  hover:text-gray-300  px-2 py-2  text-xs  font-sm">Talent Pools</a>
               <a href="#" class="text-gray-200 hover:text-gray-300   px-2 py-2  text-xs  font-sm">Job Opportunities</a>
@@ -138,7 +168,6 @@ From Tailwind website -->
   <script>
     // JavaScript code to toggle mobile menu
     document.addEventListener("DOMContentLoaded", function () {
-
         
       var mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
       var mobileMenu = document.getElementById('mobile-menu');
@@ -149,7 +178,6 @@ From Tailwind website -->
         mobileMenu.classList.toggle('hidden');
       });
 
-      
     });
 
 
