@@ -34,17 +34,20 @@ import WORK from "../images/WORK.png";
 		<div class="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
 		  <div class="mt-6 relative flex w-full items-center overflow-hidden bg-gray-200 shadow-2xl rounded-lg">
 			
-			<button id="closeModalButton" type="button" class="absolute right-8 top-4 text-[#ea580c] hover:text-gray-500 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8">
-				<span class="sr-only">Close</span>
-				<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-				  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-				</svg>
-			  </button>
+			
 			<div class="w-full h-96">
 				<iframe class="w-full h-96" src="https://www.youtube.com/embed/j5-yKhDd64s?si=QzoC4DvfOLXQkvob" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
+			
 		  </div>
+		  
 		</div>
+		<button id="closeModalButton" type="button" class="w-8 h-8 absolute bg-slate-400 rounded-full text-gray-700 hover:text-gray-500 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-24">
+			<span class="sr-only">Close</span>
+			<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+			  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+			</svg>
+		  </button>
 	  </div>
 	  
 	</div>
@@ -69,13 +72,13 @@ import WORK from "../images/WORK.png";
 					<p class="text-xs uppercase text-gray-500">Hello,</p>
 					<h2 class="mt-5 text-2xl font-light leading-tight tracking-tight text-gray-600">
 					  We are  
-					  <span class=" text-gray-900 font-semibold dark:text-success-400">PLUS WORK</span>
+					  <span class=" text-gray-900 font-semibold">PLUS WORK</span>
 					</h2>
 					<img src={WORK.src} class="w-48 h-22 lg:ml-16 sm:ml-0  mt-10" alt="">
 				  </div>
 		  
 				  <div class="mb-12 lg:mb-0 w-full">
-					<p class="text-xs font-thin text-gray-700">Welcome to <span class="font-bold">PLUS WORK</span>, where Global Talent meets borderless opportunities. We specialize in connecting top-tier talent with exceptional opportunities worldwide. Our unique offerings serve the needs of remote workers, providing a platform that crosses borders.  Our diverse community of skilled professionals, where expertise knows no borders, and together, let's redefine the future of remote work. 
+					<p class="text-sm font-thin text-gray-700">Welcome to <span class="font-bold">PLUS WORK</span>, where Global Talent meets borderless opportunities. We specialize in connecting top-tier talent with exceptional opportunities worldwide. Our unique offerings serve the needs of remote workers, providing a platform that crosses borders.  Our diverse community of skilled professionals, where expertise knows no borders, and together, let's redefine the future of remote work. 
 						Join us in shaping the future of work, where distance is no longer a barrier to success.</p>
 						<button class="flex gap-1 text-xs font-light mt-2 uppercase relative rounded-sm bg-[#ea580c] p-1 text-white hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">What We Provide <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
 							<path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -723,7 +726,7 @@ import WORK from "../images/WORK.png";
 		<section class="bg-white"> 
         <div class="py-8 px-2 mx-auto max-w-screen-xl sm:py-16 lg:px-4 w-screen">
             <div class="mx-auto max-w-screen-sm text-center w-screen">
-                <h2 class="mb-4 text-3xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white"> Explore Our Services with a Free Trial</h2>
+                <h2 class="mb-4 text-3xl tracking-tight font-extrabold leading-tight text-gray-900"> Explore Our Services with a Free Trial</h2>
                 <p class="mb-6 text-xs font-light text-gray-500 dark:text-gray-400">Take the first step towards efficiency, innovation, and success with our [Product/Service]. We're excited to offer you a free trial so you can experience the impact firsthand.</p>
 				
             </div>

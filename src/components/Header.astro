@@ -34,6 +34,7 @@ From Tailwind website -->
   </style>
    <!-- lg:fixed  -->
 <nav class="bg-[#001822] z-30 w-full">
+   
     <div class="lg:mx-6 sm:mx-2 max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -167,18 +168,15 @@ From Tailwind website -->
               <a href="#" class="text-gray-200 hover:text-gray-300   px-1 py-2  text-xs  font-sm">Job Opportunities</a>
               <a href="#" class="text-gray-200 hover:text-gray-300   px-1 py-2  text-xs  font-sm">Blogs</a>
               <a href="#" class="text-gray-200 hover:text-gray-300   px-1 py-2  text-xs  font-sm">About Us</a>
-             
-        
-                 
-
-             </a> 
+  
+            
             </div>
         </div>
          
         </div>
         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <div class="hidden lg:block pr-4">
-            <div class="relative inline-block dropdown pr-4">
+          <div class="hidden lg:block">
+            <div class="relative inline-block dropdown">
               <button tabindex="0" class="text-gray-200 hover:text-gray-300 text-xs  font-sm">
                 EN
               </button>
@@ -187,6 +185,7 @@ From Tailwind website -->
                 <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Japanese</a>
               </div>
             </div>
+           
             <div class="relative inline-block dropdown">
               <button tabindex="0" class="text-gray-200 hover:text-gray-300   px-1 py-2  text-xs  font-sm">
                 $ USD
@@ -198,7 +197,7 @@ From Tailwind website -->
               </div>
             </div>
           </div>
-          <button type="button" class="relative rounded-sm bg-[#ea580c] p-1 text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text-xs  font-sm">
+          <button type="button" class="ml-12 relative rounded-sm bg-[#ea580c] p-1 text-gray-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text-xs  font-sm">
            
            Contact Us
           
@@ -371,6 +370,12 @@ From Tailwind website -->
       mobileMenuButton.addEventListener('click', function () {
         mobileMenu.classList.toggle('hidden');
       });
+
+
+      function showupServices(){
+        const box = document.querySelector('.dropdown-menu');
+        
+      }
 
     });
 
