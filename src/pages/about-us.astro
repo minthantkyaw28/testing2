@@ -8,9 +8,15 @@ import ceoimg from "../images/ceoimg.png";
 ---
 
 <Base>
-	<section class="bgImg dark:bg-gray-800 dark:text-gray-100 h-40 w-full">
+	<!-- <section class="bgImg dark:bg-gray-800 dark:text-gray-100 h-40 w-full">
 		<div class="overlay1 w-full"></div>
-	</section>
+	</section> -->
+	<section class="bgImg text-gray-300 h-40 w-full">
+        <div class="overlay1 w-full">
+            <!-- <p class="text-center hero-text1">Expand your international workforce</p> -->
+            <p class="text-center hero-text2">about our company</p>
+        </div>
+    </section>
 
 	<!-- 1st Hero Section -->
 	<section class="bg-white dark:bg-gray-900 mb-8">
@@ -224,48 +230,92 @@ import ceoimg from "../images/ceoimg.png";
 		background-image: url('../images/ceoimg.png');
 	}
 	.bgImg{
-	  background-image: url('https://image.boxrox.com/2023/05/Laptop-sitting.jpg');
-	
-	background-size: cover;
-	background-position: center;
-	height: 40vh;
-	border-bottom-left-radius: 100px; 
-  border-bottom-right-radius: 100px;
-	
+		  background-image: url('https://image.boxrox.com/2023/05/Laptop-sitting.jpg');
+		
+		background-size: cover;
+		background-position: center;
+		height: 40vh;
+		border-bottom-left-radius: 100px; 
+	  border-bottom-right-radius: 100px;
+		
+		}
+		.overlay1 {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color:#0a4b5be2; /* Adjust the color and transparency as needed */
+	  border-bottom-left-radius: 100px; 
+	  border-bottom-right-radius: 100px;
 	}
-	.overlay1 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color:#0a4b5be2; /* Adjust the color and transparency as needed */
-  border-bottom-left-radius: 100px; 
-  border-bottom-right-radius: 100px;
-}
+	
+	/* .overlay1::after{
+		content: "Expand your international workforce";
+		display: block; 
+	  font-style: italic; 
+	  color: white; 
+	  position: absolute;
+	  font-size: 30px;
+	 text-transform: uppercase;
+	  top: 40%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  
+	} */
+	.overlay2 {
+	  position: relative;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	 
+	  border-bottom-left-radius: 100px; 
+	  border-bottom-right-radius: 100px;
+	}
 
-.overlay1::after{
-	content: "About Our Company";
-	display: block; /* Ensures the content is on a new line */
-  font-style: italic; /* Example styling; you can adjust this as needed */
-  color: white; 
-  position: absolute;
-  font-size: 30px;
- text-transform: uppercase;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-}
-.overlay2 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
- 
-  border-bottom-left-radius: 100px; 
-  border-bottom-right-radius: 100px;
-}
+    .hero-text1{
+	  display: block; /* Ensures the content is on a new line */
+	  color: rgb(228, 228, 228); 
+	  position: absolute;
+      font-weight: 500;
+	  font-size: 25px;
+	  top: 35%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+    }
+    .hero-text2{
+       display: block; 
+     color: white; 
+     position: absolute;
+     font-size: 30px;
+    text-transform: uppercase;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+
+   @media (max-width: 640px) { 
+    .hero-text1{
+	  display: block; /* Ensures the content is on a new line */
+	  color: rgb(228, 228, 228); 
+	  position: absolute;
+      font-weight: 500;
+	  font-size: 15px;
+	  top: 35%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+    }
+    .hero-text2{
+       display: block; 
+     color: white; 
+     position: absolute;
+     font-size: 25px;
+    text-transform: uppercase;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+    }
 </style>
 </Base>
