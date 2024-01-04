@@ -12,11 +12,11 @@ import ceoimg from "../images/ceoimg.png";
 		<div class="overlay1 w-full"></div>
 	</section>
 
-	<section class="bg-white dark:bg-gray-900 mb-8">
+	<!-- <section class="bg-white dark:bg-gray-900 mb-8">
 		<div class="gap-8 items-center py-8 px-4  mx-auto max-w-screen-4xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-4">
-			<img class="w-full sm:order-1" src={img1.src} alt="dashboard image">
+			<img class="w-full" src={img1.src} alt="dashboard image">
 		
-			<div class="mt-4 md:mt-0 sm:order-2">
+			<div class="mt-4 md:mt-0">
 				<p class="uppercase text-orange-500 mb-4">ABOUT US - WHAT WE DO</p>
 				<h2 class="mb-6 text-3xl tracking-tight font-normal text-gray-900 uppercase">We work with clients of all sizes</h2>
 				<p class="mb-6 text-sm font-light text-gray-500 md:text-lg dark:text-gray-400">Whether you are a start up or a more established company, we begin the process by listening closely to the specifics of your needs and lear- ning about your culture, philosophy and goals. We then find candida- tes who share your values and bring value to your team.
@@ -24,16 +24,32 @@ import ceoimg from "../images/ceoimg.png";
 				
 			</div>
 		</div>
+	</section> -->
+	<section class="bg-white dark:bg-gray-900 mb-8">
+		<div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-4xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-4">
+			<!-- Order 2 for small screens, Order 1 for larger screens -->
+			<div class="mt-4 md:mt-0 md:order-2">
+				<p class="uppercase text-orange-500 mb-4">ABOUT US - WHAT WE DO</p>
+				<h2 class="mb-6 text-3xl tracking-tight font-normal text-gray-900 uppercase">We work with clients of all sizes</h2>
+				<p class="mb-6 text-sm font-light text-gray-500 md:text-lg dark:text-gray-400">Whether you are a start-up or a more established company, we begin the process by listening closely to the specifics of your needs and learning about your culture, philosophy, and goals. We then find candidates who share your values and bring value to your team. Working together throughout the process, we guide you from interview to placement and provide support before, during and after the perfect match is made.</p>
+			</div>
+	
+			<!-- Order 1 for small screens, Order 2 for larger screens -->
+			<img class="w-full md:order-1" src={img1.src} alt="dashboard image">
+		</div>
 	</section>
+	
+
+
 
 	<section class="bg-white dark:bg-gray-900 mb-8">
 		<div class="gap-8 items-center py-8 px-4  mx-auto max-w-screen-4xl md:grid md:grid-cols-2 sm:py-16 lg:px-4">
-			<div class="mt-4 md:mt-0 lg:order-1 sm:order-2">
+			<div class="mt-4 md:mt-0">
 				<p class="uppercase text-orange-500 mb-4">LET'S WORK TOGETHER</p>
 				<h2 class="mb-6 text-3xl tracking-tight font-normal text-gray-900 uppercase">How can we build your business?</h2>
 				<p class="mb-6 text-sm font-light text-gray-500 md:text-lg dark:text-gray-400">Lorem ipsum dolor sit amet consectetur. Lectus amet orci sed nullam. Integer lorem tristique pellentesque quam magna at. Ut felis amet amet quis elementum. Dictum fringilla faucibus tincidunt ut pellentesque.</p>
 			</div>
-			<img class="w-full lg:order-2 sm:order-1" src={img2.src} alt="dashboard image">
+			<img class="w-full" src={img2.src} alt="dashboard image">
 		</div>
 	</section>
 	
